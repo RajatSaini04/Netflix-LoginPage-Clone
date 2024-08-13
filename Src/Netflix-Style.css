@@ -358,7 +358,7 @@ nav span img {
 }
 
 .download-btn {
-    background: url(./Assets/Images/download-icon.gif) center center no-repeat;
+    background: url(../Assets/Images/download-icon.gif) center center no-repeat;
     width: 48px;
     height: 48px;
     background-size: 100%;
