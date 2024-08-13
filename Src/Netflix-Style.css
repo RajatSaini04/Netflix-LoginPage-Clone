@@ -103,7 +103,7 @@ nav span img {
     line-height: 1.25;
 }
 
-.main .lang-btn :nth-child(3){
+.main .lang-btn :nth-child(3) {
     display: none;
 }
 
@@ -197,7 +197,7 @@ nav span img {
 .hero-btn input::placeholder {
 
     color: rgba(255, 255, 255, 0.7);
-   
+
 }
 
 .hero-btn input:focus-visible {
@@ -313,7 +313,6 @@ nav span img {
 
 .img-overlay-description {
 
-
     overflow: hidden;
     position: absolute;
     left: 50%;
@@ -330,18 +329,20 @@ nav span img {
     box-shadow: 0 0 2em 0 rgb(0, 0, 0);
     border-radius: 0.75rem;
     z-index: 1;
+    height: 70px;
 }
 
 .img-overlay-description img {
 
-    height: 5rem;
     width: auto;
+    height: 100%;
     margin: 0 10px 0 0;
 
 }
 
 .img-overlay-description :nth-child(2) {
     width: 60%;
+    text-align: left;
 }
 
 .img-overlay-description h4 {
@@ -546,7 +547,7 @@ footer .lang-btn :nth-child(3) {
 
     .main {
         background-size: cover;
-        height: 95vh;
+        height: 75vh;
     }
 
     nav {
@@ -686,31 +687,43 @@ footer .lang-btn :nth-child(3) {
     .faq ul li span {
         font-size: 16px;
     }
+    .img-overlay-description{
+        width: 70%;
+    }
 }
 
 @media screen and (max-width:426px) {
 
-    .main .lang-btn :nth-child(3){
+    .main .lang-btn :nth-child(3) {
         display: block;
     }
-    
-    .main .lang-btn :nth-child(2){
+
+    .main .lang-btn :nth-child(2) {
         display: none;
     }
-    
+
     .lang-btn select {
         padding: 6px 30px;
+    }
+    .img-overlay-description{
+        height: 65px;
+        width: 80%;
+    }
+
 }
 
 @media screen and (max-width:320px) {
 
 
-    .main{
-        height: auto;
+    .main {
+        height: 75vh;
     }
-    .main h1{
-        font-size:26px ;
+
+    .main h1 {
+        font-size: 26px;
     }
-    
-}
+    .img-overlay-description{
+        height: 50px;
+    }
+
 }
