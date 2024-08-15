@@ -527,8 +527,9 @@ footer .lang-btn {
 }
 
 footer .lang-btn :nth-child(3) {
+    position: absolute;
     left: 100px;
-}
+    top: 8px;}
 
 .f-sub-heading {
     font-size: 14px;
