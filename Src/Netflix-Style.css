@@ -34,6 +34,8 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    padding-top: 15px;
+    gap: 20px;
 }
 
 .main::before {
@@ -100,7 +102,6 @@ nav span img {
     color: white;
     border-radius: 5px;
     appearance: none;
-    line-height: 1.25;
 }
 
 .main .lang-btn :nth-child(3) {
@@ -536,21 +537,20 @@ footer .lang-btn :nth-child(3) {
 }
 
 
-
-
-
 /* For TABLETS */
 
 
 /* (min-width:640px) and */
-@media (max-width:959.98px) {
-
+@media only screen and (max-width:959.98px ) {
 
     .main {
         background-size: cover;
         height: 75vh;
     }
-
+    .hero h3 {
+        margin: 0 0 16px 0;
+       
+    }
     nav {
         max-width: 90vw;
     }
@@ -588,7 +588,7 @@ footer .lang-btn :nth-child(3) {
     .section-5 h1,
     .section-6 h1 {
 
-        font-size: 30px;
+        font-size: 27px;
         font-weight: 700;
         text-align: center;
     }
@@ -713,15 +713,16 @@ footer .lang-btn :nth-child(3) {
 
 }
 
-@media screen and (max-width:320px) {
+@media screen and (max-width:370px)  {
 
 
     .main {
-        height: 75vh;
+        height: 100dvh;
+        padding-top: 10px;
     }
 
     .main h1 {
-        font-size: 26px;
+        font-size: 24px;
     }
     .img-overlay-description{
         height: 50px;
