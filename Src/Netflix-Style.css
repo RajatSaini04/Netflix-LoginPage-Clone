@@ -444,6 +444,26 @@ ul li {
     background: rgb(45, 45, 45);
     color: white;
     border: none;
+    flex-wrap: wrap;
+}
+
+.faq-answer {
+    width: 100%;
+    max-height: 0;
+    overflow: hidden;
+    color: white;
+}
+
+.faq-answer.active {
+    max-height: fit-content;
+    padding: 24px;
+    background-color: rgb(45, 45, 45);
+    margin-top: 1.5px;
+    transition: all .1s  ease;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    
 }
 
 .faq button span {
@@ -530,7 +550,8 @@ footer .lang-btn {
 footer .lang-btn :nth-child(3) {
     position: absolute;
     left: 100px;
-    top: 8px;}
+    top: 8px;
+}
 
 .f-sub-heading {
     font-size: 14px;
@@ -541,16 +562,18 @@ footer .lang-btn :nth-child(3) {
 
 
 /* (min-width:640px) and */
-@media only screen and (max-width:959.98px ) {
+@media only screen and (max-width:959.98px) {
 
     .main {
         background-size: cover;
         height: 75vh;
     }
+
     .hero h3 {
         margin: 0 0 16px 0;
-       
+
     }
+
     nav {
         max-width: 90vw;
     }
@@ -688,7 +711,8 @@ footer .lang-btn :nth-child(3) {
     .faq ul li span {
         font-size: 16px;
     }
-    .img-overlay-description{
+
+    .img-overlay-description {
         width: 70%;
     }
 }
@@ -706,14 +730,15 @@ footer .lang-btn :nth-child(3) {
     .lang-btn select {
         padding: 6px 30px;
     }
-    .img-overlay-description{
+
+    .img-overlay-description {
         height: 65px;
         width: 80%;
     }
 
 }
 
-@media screen and (max-width:370px)  {
+@media screen and (max-width:370px) {
 
 
     .main {
@@ -724,7 +749,8 @@ footer .lang-btn :nth-child(3) {
     .main h1 {
         font-size: 24px;
     }
-    .img-overlay-description{
+
+    .img-overlay-description {
         height: 50px;
     }
 
