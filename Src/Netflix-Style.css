@@ -459,11 +459,29 @@ ul li {
     padding: 24px;
     background-color: rgb(45, 45, 45);
     margin-top: 1.5px;
-    transition: all .1s  ease;
+    transition: max-height 1s  ease;
     display: flex;
-    /* justify-content: center; */
     align-items: center;
     
+}
+
+.icon-plus{
+    transform: rotate(0deg);
+    transition: all .2s  ease;
+}
+
+.icon-plus.active{
+    transform: rotate(45deg);
+    transition: all .2s  ease;
+}
+.icon-plus2{
+    transform: rotate(0deg);
+    transition: all .2s  ease;
+}
+
+.icon-plus2.active{
+    transform: rotate(45deg);
+    transition: all .2s  ease;
 }
 
 .faq button span {
